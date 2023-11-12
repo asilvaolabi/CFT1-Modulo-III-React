@@ -47,19 +47,14 @@ Para o módulo III usaremos as seguintes tecnologias:
 
 👩🏾‍💻 12 ✓   20/01 -	Autogestão - Aula prática / Monitoria
 
-💻 10 ✓ 22/01 | React -	Importância dos testes unitários, introdução a TDD e pirâmide de testes,  Instalação e Configuração (Jest, Prettier, ES Lint), Testes assíncronos, de funções
-💻 11 ✓ 24/01 | React - Testes assíncronos, de funções, testando: componentes, render.
+💻 13 ✓ 22/01 | React -	Importância dos testes unitários, introdução a TDD e pirâmide de testes,  Instalação e Configuração (Jest, Prettier, ES Lint), Testes assíncronos, de funções
+💻 14 ✓ 24/01 | React - Testes assíncronos, de funções, testando: componentes, render.
 
-👩🏾‍💻 12 ✓   27/01 -	Autogestão - Aula prática / Monitoria
+👩🏾‍💻 15 ✓   27/01 -	Autogestão - Aula prática / Monitoria
 
-💻 10 ✓ 30/01 | React -	Projeto final
-💻 11 ✓ 02/02 | React - Projeto final
-👩🏾‍💻 12 ✓ 04/02 |	React - Projeto final
-
-
-
-<br>
-
+💻 16 ✓ 30/01 | React -	Projeto final
+💻 17 ✓ 02/02 | React - Projeto final
+👩🏾‍💻 18 ✓ 04/02 |	React - Projeto final
 
 <br>
 
