@@ -60,7 +60,7 @@ Para o módulo III usaremos as seguintes tecnologias:
 
 ## `Apresentação da aula`
 
-- [link da apresentação de React]([https://docs.google.com/presentation/d/1akCKczjv3oPmd6NqQ2cQ4DL6Im2pY3Z8XV6Dv4B4sLo/edit?usp=sharing](https://www.canva.com/design/DAFzN-g6jrk/A30f-j4QNJ-R9htQArT38Q/edit?utm_content=DAFzN-g6jrk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [link da apresentação de React](https://www.canva.com/design/DAFzN-g6jrk/A30f-j4QNJ-R9htQArT38Q/edit?utm_content=DAFzN-g6jrk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 --- 
 <br>
