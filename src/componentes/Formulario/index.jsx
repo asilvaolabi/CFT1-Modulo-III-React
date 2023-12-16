@@ -4,7 +4,7 @@
     import ListaSuspensa from '../ListaSuspensa'
     import './Formulario.css';
 
-    const Formulario = (props) => {
+    const Formulario = ({ aoReferenciaCadastrada }) => {
 
       const areas = [
         'Gestão de Projetos',
@@ -23,7 +23,7 @@
       const [cargo, setCargo] = useState('');
       const [imagem, setImagem] = useState('');
       const [time, setTime] = useState('');
-      const [cards, setCard] = useState([]);
+      
 
       const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -33,8 +33,7 @@
           imagem,
           time
         }
-
-        setCard([...cards, novoCard]);
+        aoReferenciaCadastrada(novoCard);
       }
 
       return(
@@ -72,19 +71,6 @@
             />
             <Botao>Cadastrar</Botao>
           </form>
-
-          <div className='cards-container'>
-            {cards.map((card, index) => (
-              <div className='card'>
-                <img src={card.imagem} alt="Imagem do Card" />
-                <p>Nome: {card.nome}</p>
-                <p>Cargo: {card.cargo} </p>
-                <p>Time: {card.time} </p>
-              </div>
-            ))}
-          </div>
-          
-          
         </section> 
       )
     }

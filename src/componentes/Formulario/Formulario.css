@@ -1,51 +1,53 @@
-  .formulario{ 
-    display: flex;
-    justify-content: center;
-    margin: 80px;
-  }
+.formulario{
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
 
-  .formulario form {
-    max-width: 80%;
-    background-color: #d5dafc;
-    border-radius: 20px; 
-    padding: 36px 64px; 
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08); 
-  }
+.formulario form {
+  max-width: 80%;
+  background-color: #d5dafc;
+  border-radius: 20px;
+  padding: 36px 64px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
 
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ou 'space-between', dependendo da aparência desejada */
+}
 
-  .card {
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    background-color: #6278f7;
-    border-radius: 10px;
-    padding: 16px;
-    margin: 8px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-    color: white;
-  }
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6278f7;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  flex: 0 0 calc(25% - 16px); /* Calcula a largura para 6 cards por linha com um espaçamento de 16px entre eles */
+  margin: 8px;
+}
 
-  .card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
-  .cabecalho{
-    background-color: #f0f0f0;
-    border-radius: 10px 10px 0px 0px;
-  }
+.cabecalho{
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0px 0px;
+}
 
-  .rodape {
-    background: #6278f7;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px;
-    padding-top: 90px;
-    padding-bottom: 40px;
-  }
+.rodape {
+  background: #6278f7;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
