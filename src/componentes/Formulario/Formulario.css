@@ -1,13 +1,51 @@
-.formulario{ 
-  display: flex;
-  justify-content: center;
-  margin: 80px;
-}
+  .formulario{ 
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+  }
 
-.formulario form {
-  max-width: 80%;
-  background-color: #f2f2f2;
-  border-radius: 20px; /* arredondando as bordas */
-  padding: 36px 64px; /* espaçamento */
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08); /* sombra, sençasão de flutuante */
-}
+  .formulario form {
+    max-width: 80%;
+    background-color: #d5dafc;
+    border-radius: 20px; 
+    padding: 36px 64px; 
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08); 
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    background-color: #6278f7;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+
+  .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .cabecalho{
+    background-color: #f0f0f0;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .rodape {
+    background: #6278f7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
