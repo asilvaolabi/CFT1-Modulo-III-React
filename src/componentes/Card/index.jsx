@@ -1,3 +1,6 @@
+import React from 'react';
+import './Card.css';
+
 const Card = ({referencia}) => {
     return (
         <div className='card'>
@@ -5,6 +8,12 @@ const Card = ({referencia}) => {
             <p>Nome: {referencia.nome}</p>
             <p>Cargo: {referencia.cargo} </p>
             <p>Time: {referencia.time} </p>
+            {referencia.pokemonEscolhido && (
+                <div className='pokemon-container'>
+                    <p>Pokemon Escolhido: </p>
+                    <img src={referencia.pokemonEscolhido} alt='Pokemon'/>
+                </div>
+            )}
         </div>
     )
 }

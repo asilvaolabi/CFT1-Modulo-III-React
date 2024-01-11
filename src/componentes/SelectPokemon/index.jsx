@@ -22,7 +22,7 @@ const SelectPokemon = (props) => {
         };
     
         fetchPokemons(); // Chama a função para buscar os Pokémons ao montar o componente
-      }, []); // Array vazio para garantir que o useEffect execute apenas uma vez
+    }, []); // Array vazio para garantir que o useEffect execute apenas uma vez
 
       // Função assíncrona para buscar os detalhes de um Pokémon específico
     const fetchPokemonDetails = async (pokemonName) => {

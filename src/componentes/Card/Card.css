@@ -1,0 +1,13 @@
+.pokemon-container {
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pokemon-container img {
+    width: 180px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção original da imagem */
+}
