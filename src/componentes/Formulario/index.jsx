@@ -4,6 +4,7 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 import SelectPokemon from "../SelectPokemon";
+import CampoCep from "../CampoCep";
 
 const Formulario = ({ aoReferenciaCadastrada }) => {
     const areas = [
@@ -24,6 +25,8 @@ const Formulario = ({ aoReferenciaCadastrada }) => {
     const [imagem, setImagem] = useState('');
     const [time, setTime] = useState('');
     const [pokemonEscolhido, setPokemonEscolhido] = useState(''); // Estado para armazenar o Pokémon escolhido
+    const [cep, setCep] = useState('');
+    const [endereco, setEndereco] = useState('');
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -32,7 +35,9 @@ const Formulario = ({ aoReferenciaCadastrada }) => {
             cargo,
             imagem,
             time, 
-            pokemonEscolhido // Incluindo o Pokémon escolhido nos dados do card
+            pokemonEscolhido, // Incluindo o Pokémon escolhido nos dados do card
+            cep,
+            endereco
         };
         aoReferenciaCadastrada(novoCard);
         console.log(novoCard);
@@ -76,6 +81,16 @@ const Formulario = ({ aoReferenciaCadastrada }) => {
                     label='Escolha um Pokemon:'
                     aoSelecionarPokemon={setPokemonEscolhido} 
                 /> 
+
+                <CampoCep
+                    obrigatorio={true}
+                    label='CEP'
+                    labelEndereco='Endereco'
+                    placeholder='Digite seu CEP'
+                    aoAlterarCampo={setCep} // Agora, aoAlterarCampo recebe o setCep diretamente
+                    aoPreencherEndereco={setEndereco} // Nova prop para preencher o endereço automaticamente
+                />
+
                 <Botao>Criar Card</Botao>
             </form>
         </section>
