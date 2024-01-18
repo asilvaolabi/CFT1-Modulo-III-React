@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
-import "./Menu.css";
 import React from "react";
+import styles from "./Menu.module.css";
 
 const Menu = () => {
   return (
     <nav>
-      <ul className="menu">
+      <ul className={styles.menu}>
         <li>
-          <Link className="menu-item" to="/">
+          <Link className={styles.menuItem} to="/">
             Inicio
           </Link>
         </li>
         <li>
-          <Link className="menu-item" to="/sobre">
+          <Link className={styles.menuItem} to="/formulario">
+            Formulario
+          </Link>
+        </li>
+        <li>
+          <Link className={styles.menuItem} to="/sobre">
             Sobre
           </Link>
         </li>

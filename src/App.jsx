@@ -1,31 +1,19 @@
-import { useState } from "react"
 import Banner from "./componentes/Banner"
-import Formulario from "./componentes/Formulario"
-import Card from "./componentes/Card"
 import { Route, Routes } from "react-router-dom"
-import SobrePage from "./pages/SobrePage"
-import ErrorPage from "./pages/ErrorPage"
+import SobrePage from "./pages/SobrePage";
+import ErrorPage from "./pages/ErrorPage";
+import HomePage from "./pages/HomePage";
+import FormularioPage from "./pages/FormularioPage"
 
 function App() {
-    // criar um estado para receber o card
-    const [referencias, setReferencias] = useState ([])
-
-    // funcao para cadastrar o card
-    const aoNovaReferenciaAdicionada = (referencia) => {
-        setReferencias([...referencias, referencia])
-    }
+   
     
     return (
             <div>
                 <Banner />
-                <Formulario aoReferenciaCadastrada={aoNovaReferenciaAdicionada} />
-                <div className="cards-container">
-                    {referencias.map((referencia, index) => (
-                        <Card key={index} referencia={referencia}/>
-                    ))}
-                </div>
-
                 <Routes>
+                    <Route path="/" element={<HomePage /> }/>
+                    <Route path="/formulario" element={<FormularioPage/>} />
                     <Route path="/sobre" element={<SobrePage />}/>
                     <Route path="/*" element={<ErrorPage />}/>
                 </Routes>

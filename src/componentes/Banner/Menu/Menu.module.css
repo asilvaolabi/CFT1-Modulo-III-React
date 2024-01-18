@@ -4,23 +4,23 @@
     align-items: center;
     list-style: none;
     padding: 15px 0;
-    background-color: #6278F7;
+    background-color: var(--primary-color);
     position: fixed;
     top: 0;
     width: 100%;
   }
   
-  .menu-item {
+  .menuItem {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
     margin-right: 20px;
     cursor: pointer;
     display: inline-block;
   
   }
   
-  .menu-item:hover {
+  .menuItem:hover {
     transform: scale(1.1); 
     transition: transform 0.3s ease; 
   }

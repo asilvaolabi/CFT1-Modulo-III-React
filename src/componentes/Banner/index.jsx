@@ -1,7 +1,6 @@
-import './Banner.css';
+import './Banner.Module.css';
 import Menu from './Menu';
 
-// criando meu componente sempre com letra maiúscula
 const Banner = () => {
     return(
         <div>  
