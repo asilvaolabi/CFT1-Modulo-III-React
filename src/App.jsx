@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import FormularioPage from "./pages/FormularioPage"
 
 function App() {
-   
     
     return (
             <div>

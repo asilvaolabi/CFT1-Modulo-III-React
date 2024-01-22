@@ -1,0 +1,30 @@
+
+.sobrePage {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subcontainerPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nomeCompleto {
+    font-size: 36px;
+    color: var(--primary-color);
+    font-weight: 700;
+    height: 45px;
+}
+
+.profissao {
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    height: 40px;
+}
+
+/* Outros estilos conforme necessário */
