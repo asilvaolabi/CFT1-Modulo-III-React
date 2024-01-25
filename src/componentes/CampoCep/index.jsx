@@ -42,8 +42,9 @@ const CampoCep = (props) => {
     return (
         // Criar duas labels e dois inputs
         <div className='campo-input'>
-            <label>{props.label}</label>
+            <label htmlFor='cepInput'>{props.label}</label>
             <input
+                id='cepInput'
                 onChange={aoDigitarNoCampo}
                 required={props.obrigatorio}
                 placeholder={props.placeholder}
@@ -52,8 +53,9 @@ const CampoCep = (props) => {
             />
 
             {/* Adicionei um segundo label e input para o endereço */}
-            <label>{props.labelEndereco}</label>
+            <label htmlFor='cepInput'>{props.labelEndereco}</label>
             <input
+                id='cepInput'
                 value={endereco}
                 readOnly={true}
             />
